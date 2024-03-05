@@ -1,0 +1,118 @@
+/*
+colors used:
+primary color (black): hsl(246, 100%, 6%);
+secondary color (blue): hsl(246, 100%, 65%);
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: hsl(246, 100%, 6%);
+  background-color: hsl(206, 24%, 94%);
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: hsl(246, 100%, 65%);
+}
+
+a:visited {
+    color: hsl(246, 100%, 65%);
+}
+
+a:hover,
+a:focus {
+    color: hsl(246, 100%, 75%);
+}
+
+a:active {
+    color: hsl(246, 100%, 55%);
+}
+
+.button {
+    background: hsl(246, 100%, 65%);
+    border: 3px solid hsl(246, 100%, 65%);
+    color: hsl(206, 24%, 94%);
+    padding-block: 0.75em;
+    padding-inline: 1.5em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:visited {
+    color: hsl(206, 24%, 94%);
+}
+
+.button:hover,
+.button:focus {
+    background: hsl(246, 100%, 75%);
+    border: 3px solid hsl(246, 100%, 75%);
+    color: hsl(206, 24%, 94%);
+}
+
+.button:active {
+    background: hsl(246, 100%, 55%);
+    border: 3px solid hsl(246, 100%, 55%);
+    color: hsl(206, 24%, 94%);
+}
+
+.button-outline {
+    border: 3px solid hsl(246, 100%, 65%);
+    color: hsl(246, 100%, 65%);
+    padding-block: 0.75em;
+    padding-inline: 1.5em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button-outline:visited {
+    border: 3px solid hsl(246, 100%, 65%);
+    color: hsl(246, 100%, 65%);
+}
+
+.button-outline:hover,
+.button-outline:focus{
+    border: 3px solid hsl(246, 100%, 75%);
+    background: hsl(246, 100%, 75%);
+    color: hsl(206, 24%, 94%);
+}
+
+.button-outline:active {
+    border: 3px solid hsl(246, 100%, 55%);
+    background: hsl(246, 100%, 55%);
+    color: hsl(206, 24%, 94%);
+}
