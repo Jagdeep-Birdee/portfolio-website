@@ -18,26 +18,27 @@ body {
 }
 
 h1, h2, h3, h4 {
-    line-height: 1.4;
+    line-height: 1.2;
     margin: 0;
+    font-family: "space grotesk", serif;
 }
 
-h1 {
+h1, .h1 {
     font-size: 4rem;
     font-weight: 700;
 }
 
-h2 {
+h2, .h2 {
     font-size: 3.2rem;
     font-weight: 700;
 }
 
-h3 {
+h3, .h3 {
     font-size: 2.6rem;
     font-weight: 400;
 }
 
-h4 {
+h4, .h4 {
     font-size: 2rem;
     font-weight: 400;
 }
@@ -116,3 +117,188 @@ a:active {
     background: hsl(246, 100%, 55%);
     color: hsl(206, 24%, 94%);
 }
+
+
+/*Header Styling*/
+
+header {
+    background-color: #d1cbf7;
+    padding-block: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+header .container {
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(246, 100%, 65%);
+}
+
+nav a:visited {
+    color: hsl(246, 100%, 65%);
+}
+
+nav a:hover,
+nav a:focus {
+    color: hsl(246, 100%, 75%);
+}
+
+nav a:active {
+    color: hsl(246, 100%, 55%);
+}
+
+
+.logo {
+    text-decoration: none;
+    color: hsl(246, 100%, 6%) !important;
+    font-weight: 700;
+    font-family: "Space Grotesk", serif;
+    font-size: 2rem;
+}
+
+
+/*Footer Styling*/
+
+footer {
+    background-color: #2e2953;
+    color: 	hsl(248, 73%, 88%);
+    padding-block: 4rem 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: 	hsl(248, 73%, 88%);
+}
+
+footer a:visited {
+    color: 	hsl(248, 73%, 88%);
+}
+
+footer a:hover,
+footer a:focus {
+    color: 	hsl(248, 73%, 95%);
+}
+
+footer a:active {
+    color:	hsl(248, 73%, 75%);
+}
+
+.social {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.social svg {
+    width: 4rem;
+}
+
+
+/*layout styling*/
+
+.container {
+    padding: 0 15px;
+    display:flex;
+    flex-direction: column;
+}
+
+.row {
+    
+}
+
+main {
+    padding-block-start: 77.39px;
+}
+
+section {
+    padding-block: 4rem 2rem;
+}
+
+section:last-child {
+    padding-block-end: 4rem;
+}
+
+/*Hero Styling*/
+
+#hero h1 {
+    text-align: left;
+}
+
+#hero h1 span {
+    display:block;
+    font-size: 75%;
+    margin-block-start: 0.5em;
+}
+
+#projects .container,
+#my-story .container,
+#project-contents .container  {
+    gap: 2em;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0.60em 0 hsla(246, 100%, 65%, 0.2);
+    border-radius: 16px;
+    overflow:hidden;
+    gap:1em;
+}
+
+.card__media-wrapper {
+    order:-1;
+}
+
+.card__content-wrapper {
+    padding: 0 1em 1em;
+}
+
+.profile-image {
+    height: 400px;
+    object-fit: cover;
+    /* aspect-ratio: 1 / 1; */
+    /* border-radius: 100vw; */
+    object-position: 0 10%;
+}
+
+.profile__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.profile__content-wrapper .column,
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.no-margin-top {
+    margin-block-start: 0;
+}
+
+.list-wrapper ul {
+    margin-block: 0;
+}
+
+
