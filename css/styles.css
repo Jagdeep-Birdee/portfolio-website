@@ -12,7 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   color: hsl(246, 100%, 6%);
   background-color: hsl(206, 24%, 94%);
 }
@@ -49,7 +49,7 @@ img {
 
 a {
     color: hsl(246, 100%, 65%);
-    transition: all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
 }
 
 a:visited {
@@ -128,29 +128,69 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99999;
+    box-shadow: 0 0 0.60em 0 hsla(246, 100%, 65%, 0.2);
 }
 
-header .container {
+.navtoggle {
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    color:hsl(246, 100%, 75%) !important;
+    border-bottom: 3px solid hsl(246, 100%, 75%);
+}
+
+.icon svg{
+    width: 26px;
+}
+
+nav {
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-nav li {
-    display: inline-block;
+nav li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle.responsive nav {
+    padding-block-start: 2em;
+}
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+.navtoggle, 
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
 }
 
 nav a {
-    padding: 0 15px;
+    padding: 10px 0 5px;
     text-transform: uppercase;
     font-weight: 700;
     color: hsl(246, 100%, 65%);
+    text-decoration: none;
 }
 
 nav a:visited {
@@ -173,6 +213,7 @@ nav a:active {
     font-weight: 700;
     font-family: "Space Grotesk", serif;
     font-size: 2rem;
+    width: 100%;
 }
 
 
@@ -226,7 +267,7 @@ footer a:active {
 }
 
 main {
-    padding-block-start: 77.39px;
+    padding-block-start: 43px;
 }
 
 section {
@@ -402,6 +443,9 @@ section:last-child {
 /*Medium devices (481px or larger)*/
 @media only screen and (min-width: 481px) {
 
+    nav {
+    }
+
     .media-icons {
         top: 30%;
         transform: translateY(50%);
@@ -424,15 +468,32 @@ section:last-child {
 
 /*Medium devices (640px or larger)*/
 @media only screen and (min-width: 640px) {
-    header .container {
+
+    .navtoggle {
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     header {
         padding-block: 20px;
     }
 
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: inline-block !important;
+    }
+
+    nav ul li:last-child {
+        display: none !important;
+    }
+    
     main {
         padding-block-start: 63px;
     }
