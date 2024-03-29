@@ -73,6 +73,7 @@ a:active {
     padding-inline: 1.5em;
     display: inline-block;
     text-decoration: none;
+    border-radius: 8px;
 }
 
 .button:visited {
@@ -118,7 +119,6 @@ a:active {
     background: hsl(246, 100%, 55%);
     color: hsl(206, 24%, 94%);
 }
-
 
 /*Header Styling*/
 
@@ -260,10 +260,6 @@ footer a:active {
     padding: 0 15px;
     display:flex;
     flex-direction: column;
-}
-
-.row {
-    
 }
 
 main {
@@ -442,9 +438,6 @@ section:last-child {
 
 /*Medium devices (481px or larger)*/
 @media only screen and (min-width: 481px) {
-
-    nav {
-    }
 
     .media-icons {
         top: 30%;
