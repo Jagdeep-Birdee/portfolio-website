@@ -292,7 +292,9 @@ section:last-child {
     gap: 2em;
 }
 
-
+.project-contents__hero-img {
+    border-radius: 8px;
+}
 
 .card {
     background-color: #fff;
@@ -318,6 +320,7 @@ section:last-child {
     /* aspect-ratio: 1 / 1; */
     /* border-radius: 100vw; */
     object-position: 0 10%;
+    border-radius: 8px;
 }
 
 .profile__content-wrapper {
@@ -414,6 +417,7 @@ section:last-child {
     flex-direction: column;
     gap: 0.6em;
 }
+
 
 
 
